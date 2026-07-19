@@ -1,4 +1,2 @@
-# Ioannis Alexander Konstas
-**Information Systems and Services** — Miami, FL
-
-All articles, references, and labs live at **[blog.konstas.us](https://blog.konstas.us)**.
+# ➜ [blog.konstas.us](https://blog.konstas.us)
+### This profile has moved. All content is at [**blog.konstas.us**](https://blog.konstas.us)
