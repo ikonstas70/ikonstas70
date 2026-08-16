@@ -164,7 +164,20 @@ Given a base point $P \in E(\mathbb{F}_p)$ of prime order $n$ and a public point
 
 ---
 
-### 5. Algebraic Correspondence & Cryptanalytic Landscape
+### 5. Bit Lengths of Public-Key Algorithms for Different Security Levels
+
+The required key sizes across algorithm families diverge significantly as security levels increase. Because subexponential algorithms (GNFS and Index Calculus) exist for integer factorization and finite field discrete logarithms, their moduli must grow superlinearly. In contrast, generic square-root attacks on elliptic curves allow key sizes to scale linearly ($2 \times \text{security bits}$).
+
+| Algorithm Family | Cryptosystems | 80-bit Security (Legacy) | 128-bit Security (Standard) | 192-bit Security (High) | 256-bit Security (Top-Secret) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Integer Factorization** | RSA | 1024 bit | 3072 bit | 7680 bit | 15360 bit |
+| **Discrete Logarithm (Finite Field)** | DH, DSA, ElGamal | 1024 bit ($q \ge 160$) | 3072 bit ($q \ge 256$) | 7680 bit ($q \ge 384$) | 15360 bit ($q \ge 512$) |
+| **Elliptic Curves (ECDLP)** | ECDH, ECDSA, Ed25519 | 160 bit | 256 bit (e.g. P-256, Curve25519) | 384 bit (P-384) | 512–521 bit (P-521, Ed448) |
+| **Symmetric Key (Baseline)** | AES, 3DES | 80 bit (2TDEA / 3DES) | 128 bit (AES-128) | 192 bit (AES-192) | 256 bit (AES-256) |
+
+---
+
+### 6. Algebraic Correspondence & Cryptanalytic Comparison
 
 | Mathematical Property | Multiplicative Group $\mathbb{Z}_p^*$ | Elliptic Curve Group $E(\mathbb{F}_p)$ |
 | :--- | :--- | :--- |
