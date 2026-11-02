@@ -1,7 +1,50 @@
-# ➜ [ikonstas70.github.io](https://ikonstas70.github.io)
-### Technical research, engineering archives, and publications at [**ikonstas70.github.io**](https://ikonstas70.github.io)
+<a href="https://ikonstas70.github.io"><img src="assets/hero.png" alt="Ioannis Alexander Konstas — Cybersecurity, Enterprise Infrastructure, Cryptography, Network Engineering" width="100%"></a>
 
----
+<p align="center"><img alt="Ansible" src="https://img.shields.io/badge/Ansible-0d0d0d?style=for-the-badge&logo=ansible&logoColor=c9a858"> <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-0d0d0d?style=for-the-badge&logo=kubernetes&logoColor=c9a858"> <img alt="Docker" src="https://img.shields.io/badge/Docker-0d0d0d?style=for-the-badge&logo=docker&logoColor=c9a858"> <img alt="Python" src="https://img.shields.io/badge/Python-0d0d0d?style=for-the-badge&logo=python&logoColor=c9a858"> <img alt="Bash" src="https://img.shields.io/badge/Bash-0d0d0d?style=for-the-badge&logo=gnubash&logoColor=c9a858"> <img alt="WireGuard" src="https://img.shields.io/badge/WireGuard-0d0d0d?style=for-the-badge&logo=wireguard&logoColor=c9a858"> <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-0d0d0d?style=for-the-badge&logo=cloudflare&logoColor=c9a858"> <img alt="Cisco" src="https://img.shields.io/badge/Cisco-0d0d0d?style=for-the-badge&logo=cisco&logoColor=c9a858"> <img alt="Wazuh" src="https://img.shields.io/badge/Wazuh-0d0d0d?style=for-the-badge&logo=wazuh&logoColor=c9a858"> <img alt="OWASP" src="https://img.shields.io/badge/OWASP-0d0d0d?style=for-the-badge&logo=owasp&logoColor=c9a858"></p>
+
+### About
+
+Security engineer and founder of IT Solutions USA. I design and test the systems I run: penetration testing and IDS live-fire against my own stack, post-quantum cryptography, Kubernetes and Ansible automation, CCIE-level networking, and audit work mapped to NIST SP 800-53. Everything here is built, run and documented on infrastructure I own.
+
+### Security Engineering Portfolio
+
+<table>
+<tr>
+<td width="50%"><a href="https://ikonstas70.github.io/articles/security-automation-lab"><img src="assets/card-control-plane.png" alt="Part 1: From Scripts to a Security Control Plane" width="100%"></a></td>
+<td width="50%"><a href="https://ikonstas70.github.io/portfolio/pentest-toolkits"><img src="assets/card-pentest.png" alt="Part 2: Pentest Toolkits" width="100%"></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://ikonstas70.github.io/portfolio/network-testing"><img src="assets/card-network.png" alt="Part 3: Network Testing" width="100%"></a></td>
+<td width="50%"><a href="https://ikonstas70.github.io/portfolio/hardening-monitoring"><img src="assets/card-hardening.png" alt="Part 4: Hardening and Monitoring" width="100%"></a></td>
+</tr>
+</table>
+
+<p align="center"><a href="https://ikonstas70.github.io/portfolio/"><b>Open the full portfolio &rarr;</b></a></p>
+
+### What the work covers
+
+| Discipline | Highlights |
+|---|---|
+| **Offensive security** | Self-pentest suite, IDS live-fire with evasion variants, quantum-adversary simulation |
+| **Detection &amp; response** | SIEM pipelines, analyzer-to-blocklist automation, honeypot validation |
+| **Cryptography** | Hybrid ML-KEM-768 + X25519 with ML-DSA-65, AES-256-GCM vaults, private PKI |
+| **Platform &amp; automation** | Ansible, Semaphore, Kubernetes, least-privilege containers, scheduled self-tests |
+| **Networking** | CCIE Enterprise labs, OSPF, MPLS, DMVPN, IPv6, WireGuard, TLS hardening |
+| **Audit &amp; compliance** | Findings with severities, NIST SP 800-53 mappings, reproducible reports |
+
+### Public work
+
+| Project | What it is |
+|---|---|
+| [**ikonstas70.github.io**](https://ikonstas70.github.io) | Engineering notes: networking, security, cryptography, telecom |
+| [**owasp-security-scanner**](https://github.com/ikonstas70/owasp-security-scanner) | OWASP Top 10 file and code scanner with an HTTPS dashboard and four threat-intel lookups |
+| [**layered-security-stack**](https://github.com/ikonstas70/layered-security-stack) | Reference architecture: encrypted DNS, IDS, SIEM and a VPN exit node |
+| [**mitre-attack**](https://github.com/ikonstas70/mitre-attack) | Navigable MITRE ATT&amp;CK reference: tactics, techniques, groups, software |
+| [**ccie-ospf**](https://github.com/ikonstas70/ccie-ospf) | Mastering OSPF: a CCIE series on link-state routing |
+| [**information-security**](https://github.com/ikonstas70/information-security) | CCIE and CISSP study notes and blueprints |
+
+<details>
+<summary><b>Featured write-up: Public-Key Cryptosystems Based on the Discrete Logarithm Problem</b></summary>
 
 ## Public-Key Cryptosystems Based on the Discrete Logarithm Problem
 
@@ -196,3 +239,8 @@ The required key sizes across algorithm families diverge significantly as securi
 - **Side-Channel Defense:** Constant-time scalar multiplication (Montgomery Ladder) to eliminate timing and power analysis (SPA/DPA).
 - **Post-Quantum Transition:** Shor's algorithm solves DLP/ECDLP in polynomial time $O((\log p)^3)$, driving global adoption of NIST Post-Quantum standards (**ML-KEM** / **ML-DSA**).
 
+</details>
+
+---
+
+<sub>&copy; 2026 Ioannis Alexander Konstas. All rights reserved. Code samples are released under the <a href="https://ikonstas70.github.io/license">MIT License</a>. All testing described is performed only on systems I own or am authorized to test.</sub>
